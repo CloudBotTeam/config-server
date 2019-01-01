@@ -1,5 +1,13 @@
 spring:
   application:
     name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/CloudBotTeam/config-repo/
+          searchPaths: info
+          username: guest
+          password: guest
 server:
   port: 7001
